@@ -54,6 +54,7 @@ client.on('message', message =>{
 		if (leftMillis < 0) {
 			leftMillis += 86400000
 		}
+		console.log(`${archi_name} dans ${leftMillis / (60*1000)}`)
 		setTimeout(function() {
 		client.channels.get(rappels_id).send(`**${archi_name}** va repop dans **${delay}mn** **(${hour}:${min_str})** @everyone`, {files: [archi_pic.slice(0,42)+archi_pic.slice(64,)]})
 		}, leftMillis)
