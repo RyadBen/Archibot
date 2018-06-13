@@ -16,7 +16,7 @@ client.login(process.env.TOKEN)
 
 client.on("ready", () => {
 	console.log(`Logged in`)
-	client.channels.get(456551886720466954).send('Logged in')
+	client.channels.get("456551886720466954").send('Logged in')
 })
 	
 	
